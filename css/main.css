@@ -1,0 +1,129 @@
+*, 
+*::after, 
+*::before {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.card {
+    display: flex;
+    max-width: 960px;
+    min-height: 500px;
+    width: 90%;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+.card img {
+    width: 40%;
+    object-fit: cover;
+}
+
+.card-content {
+    width: 60%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-content h1 {
+    margin: 0 0 10px;
+    font-size: 24px;
+}
+
+.card-content p {
+    margin: 0 0 20px;
+    font-size: 16px;
+}
+
+.card-content .price {
+    font-size: 20px;
+    color: green;
+}
+
+.card-content .btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.card-content .btn:hover {
+    background-color: #45a049;
+}
+
+.price::after {
+    content: " Byn";
+}
+
+.card table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.product-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.product-title {
+    font-size: 24px;
+    padding-left: 20px;
+    font-weight: bold;
+}
+
+.product-description {
+    font-size: 16px;
+    padding: 10px 20px;
+}
+
+.product-price {
+    font-size: 20px;
+    color: green;
+    padding: 10px 20px;
+}
+
+.product-price::after {
+    content: " Byn";
+}
+
+.product-button {
+    padding: 10px 20px;
+}
+
+.product-button .btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.product-button .btn:hover {
+    background-color: #45a049;
+}
